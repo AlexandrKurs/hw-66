@@ -1,0 +1,14 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light background color */
+  border-radius: 5px;
+}
+
+.toolbar span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
