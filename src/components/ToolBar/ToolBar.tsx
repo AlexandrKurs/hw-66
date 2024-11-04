@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
+import { ToolbarProps } from "../../type";
 
-interface ToolbarProps {
-  totalCalories: number;
-  onToggleForm: () => void;
-  isFormVisible: boolean;
-}
-
-const Toolbar: React.FC<ToolbarProps> = ({ totalCalories, onToggleForm, isFormVisible }) => {
+const Toolbar: React.FC<ToolbarProps> = ({
+  totalCalories,
+  onToggleForm,
+  isFormVisible,
+}) => {
   return (
     <div className="toolbar">
       <span>Total Calories: {totalCalories} kcal</span>
-      <button onClick={onToggleForm}>
-        {isFormVisible ? 'Cancel' : 'Add new meal'}
+      <button className="btn btn-primary" onClick={onToggleForm}>
+        {isFormVisible ? "Cancel" : "Add new meal"}
       </button>
     </div>
   );
